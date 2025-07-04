@@ -1,3 +1,4 @@
 Flask
 docspring
 gunicorn
+flask-cors

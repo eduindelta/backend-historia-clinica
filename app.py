@@ -1,9 +1,11 @@
+from flask_cors import CORS
 import os
 import docspring
 from flask import Flask, request, jsonify, send_file
 import io
 
 app = Flask(__name__)
+CORS(app)
 
 # Render configurará estas variables desde su panel de control
 DOCSPRING_API_TOKEN = os.environ.get("DOCSPRING_API_TOKEN")
